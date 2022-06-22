@@ -78,24 +78,24 @@
     <article v-for="voyage in voyages" :key="voyage.id">
           <div v-if="voyage.id == 1">
                   
-              <div id="info_lammamagnam" class="titre_info" @mouseover="lammamagnamain()" @mouseleave="lammamagnamout()">{{ voyage.name }} - {{ voyage.price }}$<br></div>
+              <div id="info_lammamagnam" class="titre_info" @mouseover="lammamagnamain()" @mouseleave="lammamagnamout()">{{ voyage.name }} - {{ voyage.price }}T<br></div>
               <div id="cadre_lammamagnam">{{ voyage.description }}</div>
 
           </div>
 
           <div v-if="voyage.id == 2">
-              <div id="info_salusasecundus" class="titre_info" @mouseover="salusasecundusin()" @mouseleave="salusasecundusout()">{{ voyage.name }} - {{ voyage.price }}$<br></div>
+              <div id="info_salusasecundus" class="titre_info" @mouseover="salusasecundusin()" @mouseleave="salusasecundusout()">{{ voyage.name }} - {{ voyage.price }}T<br></div>
               <div id="cadre_salusasecundus">{{ voyage.description }}</div>
           </div>
           <div v-if="voyage.id == 3">
 
-            <div id="info_tapiwin" class="titre_info"  @mouseover="tapiwinin()" @mouseleave="tapiwinout()">{{ voyage.name }} - {{ voyage.price }}$<br></div>
+            <div id="info_tapiwin" class="titre_info"  @mouseover="tapiwinin()" @mouseleave="tapiwinout()">{{ voyage.name }} - {{ voyage.price }}T<br></div>
             <div id="cadre_tapiwin">{{ voyage.description }}</div>
           </div>
           
           <div v-if="voyage.id == 4">
 
-            <div id="info_stultitia" class="titre_info"  @mouseover="stultitiain()" @mouseleave="stultitiaout()">{{ voyage.name }} - {{ voyage.price }}$<br></div>
+            <div id="info_stultitia" class="titre_info"  @mouseover="stultitiain()" @mouseleave="stultitiaout()">{{ voyage.name }} - {{ voyage.price }}T<br></div>
             <div id="cadre_stultitia">{{ voyage.description }}</div>
           </div>
 
@@ -165,7 +165,7 @@
                     <div id="dos">
                         <h3>{{ voyage.name }}</h3>
                         <p id="rere">― Info ―</p>
-                        <p id="res"> {{ voyage.price }}$ par passager, le nombre de place se choisit lors de la réservation.<br>
+                        <p id="res"> {{ voyage.price }}T par passager, le nombre de place se choisit lors de la réservation.<br>
                             {{ voyage.description }}
                             <br>
                             <div v-if="voyage.id==1">

@@ -30,7 +30,7 @@
 
         <div class="voyage-content">
             <div class="voyage-title">
-                <h2 :style="{backgroundColor: 'rgba(0, 0, 0, 0.493)'}">{{ voyage.name }} - {{ voyage.price }}$ <br>Passagers : {{favori.quantity}}  </h2>
+                <h2 :style="{backgroundColor: 'rgba(0, 0, 0, 0.493)'}">{{ voyage.name }} - {{ voyage.price }}T <br>Passagers : {{favori.quantity}}  </h2>
                   <div id="descvoy">{{ voyage.description }}
                 <br>
                   <div v-if="voyage.nb_places > place.sum">
@@ -50,13 +50,13 @@
 
                 <div :style="{textAlign: 'center'}" v-if="voyage.nb_places - place.sum >= editingQuantity.quantity && ok">
                     
-                    <button @click="sendEditQuantity()">Validate</button>
-                    <button @click="abortEditQuantity()">Quit</button>
+                    <button @click="sendEditQuantity()">Valider</button>
+                    <button @click="abortEditQuantity()">Quitter</button>
                 </div>
 
             </div>
             <div v-else>
-                <button @click="editQuantity(voyage)">Modify the number of passengers</button>
+                <button @click="editQuantity(voyage)">Modifier le nombre de passagers</button>
             </div>   
               
             <button @click="deletevoyage(favori)">Supprimer le voyage</button>
@@ -67,7 +67,7 @@
         
             <div v-if="voyage.nb_places >= place.sum">
               <div v-if="user.tickets >= voyage.price * favori.quantity">
-                  <button @click="sendPayement(favori, voyage, user)" :style="{ textTransform: 'uppercase'}">Reserve</button>
+                  <button @click="sendPayement(favori, voyage, user)" :style="{ textTransform: 'uppercase'}">Reserver</button>
               </div>
               <div v-else id="descvoy">
                   Vous n'avez pas assez de tickets. Attendez l'an prochain.

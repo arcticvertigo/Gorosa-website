@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <style>
+        body{
+            background-image: url(fond3.jpeg);
+            background-size: cover;
+            background-attachment:fixed;
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            font-family: bc-alphapipe, sans-serif;
+        }
+        h1{
+            font-size: 30px;
+            font-weight: normal;
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            word-spacing: 15px;
+            letter-spacing: 9px;
+            text-shadow: 2px 2px 3px black;
+            clear: both;
+            margin-bottom: 60px;
+        }
+
+        #titi{
+            font-size: 18px;
+            font-weight: normal;
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            word-spacing: 15px;
+            letter-spacing: 9px;
+            text-shadow: 2px 2px 3px black;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        
+        h2{
+            font-size: 20px;
+            font-weight: normal;
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            word-spacing: 15px;
+            letter-spacing: 9px;
+            text-shadow: 2px 2px 3px black;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        nav{
+            justify-content: space-around;
+            align-items: center;
+            min-height: 15vh;
+            background-color: rgba(0, 0, 0, 0.123);
+            
+            top: 0;
+            width: 100%;
+        }
+        nav:hover {
+            background-color: rgba(0, 0, 0, 0.473);
+
+        }
+        .barre{
+            display: flex;
+            justify-content: space-around;
+            border-color: white;
+            list-style-type: none;
+            margin: 0px;
+            padding: 20px;
+        }
+        .barre li{
+            padding: 5px;
+            margin: 5px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 3px black;
+        }
+        
+        .barre a{
+            color: white;
+            text-decoration: none;
+            letter-spacing: 3px;
+            font-size: 16px;
+        }
+        .connex{
+            white-space: nowrap;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            float: right;
+            padding-inline-start: 0px;
+        }
+        .connex a{
+            color: white;
+            text-decoration: none;
+            letter-spacing: 3px;
+            font-size: 16px;
+        }
+        .connex li{
+            border: groove 2px;
+            padding: 5px;
+            margin: 5px;
+            text-shadow: 2px 2px 3px black;
+            text-transform: uppercase;
+            list-style-type: none;
+        }
+        .connex li:hover{
+            background-color: rgba(0, 0, 0, 0.493);
+            cursor: pointer;
+        }
+
+        footer{
+        background-color: rgba(0, 0, 0, 0.493);
+        background-image: url("ciel.png");
+        text-align: center;
+        padding: 5px;
+        bottom: 0px;
+        left: 10px;
+        right: 10px;
+        padding-top: 35px;
+        }
+        #resumenu a{
+        color: white;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-size: 16px;
+
+        }
+        #resumenu ul{
+            padding: 0px 0px 0px 0px;
+            margin: auto;
+        }
+        #resumenu li{
+            list-style-type: none;
+            justify-content: right;
+            padding-bottom: 30px;
+        }
+        #resumenu{
+            justify-content: space-around;
+            display: flex;
+        }
+        #signe{
+            justify-content: center;
+            height: 100px;
+        }
+        #edm{
+            width: 150px;
+            float: left;
+            padding-left: 20px;
+        }
+        #prez{
+            background-image: url("ciel.png");
+            background-color: rgba(0, 0, 0, 0.493);
+            margin: 60px;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        .menu{
+            display:none;
+            cursor: pointer;
+        }
+        .menu div{
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 5px;
+        }
+        .barrelaeho{
+            list-style-type: none;
+            text-align: center;
+            clear: both;
+            margin: 0px;
+            padding-inline-start: 0px;
+        }
+        .barrelaeho a{
+            text-decoration: none;
+            color: white;
+
+        }
+        .barrelaeho li{
+                padding: 10px;
+        }
+        .barrelaeho ul{
+            margin: 0px;
+        }
+        
+
+        #show-modal{
+            text-align: end;
+            padding: 11px;
+            display: none;
+        }
+        #show-modal button{
+            background-color: rgb(0,0,0,0);
+            border: none;
+        }
+        #show-modal button{
+            box-shadow: none;
+        }
+        #show-modal button:focus, .modal-default-button:focus{
+            outline: none;   
+        }
+        #h30{
+            padding: 0px;
+            margin: 20px;
+        }
+        .modal-default-button{
+            background-color: rgb(0,0,0,0);
+            border: none;
+            color: white;
+            font-size: 20px;
+            float: right;
+            padding: 40px;
+            padding-bottom: 0px;
+            padding-top: 10px;
+            cursor: pointer;
+        }
+        .modal-default-button:hover{
+            color: white;
+            background-color: rgba(0,0,0,0)
+        }
+        .modal-mask{
+            background-color: rgba(0, 0, 0, 0.675);
+            padding-bottom: 10px;
+            position: fixed;
+            z-index: 9998;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.3s ease;
+        }
+
+        @media screen and (max-width:850px){
+            .barre{
+                display: none;
+            }
+            .barre a{
+                display: none;
+            }
+            .menu{
+                display: block;
+                padding-top: 35px;
+                padding-right: 35px;
+                width: 30px;
+                float: right;
+            }  
+            #show-modal{
+                display: block;
+            }
+            .connex{
+                float: none;
+                margin: auto !important;
+                display: block;
+                width: 100px;
+            }
+        }
+
+        .modal-container {
+            padding: 20px 30px;
+            padding-top: 80px;
+            transition: all 0.3s ease;
+        }
+        .modal-leave-active {
+        opacity: 0;
+        }
+
+        .modal-container, .modal-leave-active .modal-container {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        button:focus{
+            outline: none;
+        }
+        button a:hover{
+            cursor: pointer;
+            color: rgba(31, 31, 31, 0.900);
+            text-decoration: none;
+        }
+        button a{
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+        }
+        button:hover{
+            cursor: pointer;
+            transition: 0.3s;
+            color: rgba(31, 31, 31, 0.900);
+            border-color: white;
+            background-color: #f2f2f2b9;
+            box-shadow: 0 0 2px rgba(31, 31, 31, 0.753);
+        }
+        button{
+            font-family: bc-alphapipe, sans-serif;
+            font-weight: normal;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            margin: 10px auto;
+            display: block;
+            border-radius: 30px;
+            background-color: rgba(0, 0, 0, 0.506);
+            padding-left: 15px;
+            padding-right: 15px;
+            border: groove;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+        }
+        #adminmode{
+            font-variant-caps: small-caps;
+            color: limegreen;
+            font-size: 30px;
+            border: groove;
+            border-color: limegreen;
+            background-color: rgba(0, 0, 0, 0.223);
+            text-align: center;
+        }
+        .adminbtn a:hover{
+            background-color: limegreen;
+        }
+        .adminbtn a{
+            color: limegreen;
+        }
+        .adminbtn:hover{
+            cursor: pointer;
+            transition: 0.3s;
+            color: black;
+            border-color: black;
+            background-color: limegreen;
+            box-shadow: 0 0 2px rgba(31, 31, 31, 0.753);
+        }
+        .adminbtn{
+            border-color: limegreen;
+            color: limegreen;
+        }
+        
+    </style>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="planet.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  href="https://use.typekit.net/cvg1juw.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/http-vue-loader/src/httpVueLoader.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue-router/dist/vue-router.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            
+          <header>
+            
+            <nav>
+              
+              <router-link to='/' id="home"><img src="plane.png" id="edm"></router-link>
+                            
+  
+              <ul class="barre">
+                  <li><router-link to='/' id="home">Accueil</router-link></li>
+                  <li v-if="user.id == 1 && isConnected"><router-link to='/stats' id="stats">Admin</router-link></li>
+                  <li><router-link to='/voyages' id="voyages">Voyages</router-link></li>
+
+
+                  <li v-if="isConnected"><router-link to='/favoris' id="favoris">Favoris</router-link></li>
+                  <li><router-link to='/citoyen' id="citoyen">Avis citoyens</router-link></li>
+                  <li><router-link to='/news' id="news">A propos</router-link></li>
+                  <ul class="connex">
+                    <div v-if="isConnected">
+                        <!--<li v-on:click="logout()">Déconnexion</li>-->
+                        <li style="text-align: center; padding: 0px;margin-top: 0px;"><router-link to='/account'>Compte</router-link></li>
+                        <li v-on:click="logout()" style="text-align: center; padding: 0px;">Déconnexion</li>
+                    </div>
+                    <div v-else>
+                        <li><router-link to='/login'>Connexion</router-link></li>
+                    </div>
+                    
+
+                  </ul>
+              </ul>
+              <!--menu rétréci-->
+                <div  id="show-modal">
+                    <button @click="showModal = true">
+                        <div class="menu" id="h30">
+                            <div class="top"></div>
+                            <div class="middle"></div>
+                            <div class="bottom"></div>
+                        </div>
+                    </button>
+                </div>
+           </nav>           
+
+        </header>
+
+        
+
+        <script type="text/x-template" id="modal-template">
+              <div class="modal-mask">
+                  <div class="modal-container">
+        
+                    <button class="modal-default-button" @click="$emit('close')">
+                        X
+                      </button>
+                                                 
+        
+                    <div class="modal-body">
+                      <slot name="body">
+                        <ul class="barrelaeho">
+                            <li @click="$emit('close')"><router-link to='/' id="home">Accueil</router-link></li>
+                            <li @click="$emit('close')"><router-link to='/voyages' id="voyages">Voyages</router-link></li>
+                            <li @click="$emit('close')"><router-link to='/favoris' id="favoris">Favoris</router-link></li>
+                            <li @click="$emit('close')"><router-link to='/citoyen' id="citoyen">Avis citoyens</router-link></li>
+                            <li @click="$emit('close')"><router-link to='/news' id="news">A propos</router-link></li>
+                            
+                        </ul>  
+                      </slot>
+                    </div>
+
+                  </div>
+              </div>
+          </script>
+
+
+              <modal v-if="showModal" @close="showModal = false">
+
+              </modal>
+              
+        <h1>L'Agence Spatiale Gorosienne</h1>
+        
+
+            
+        <main>
+        <router-view
+            :user="user"
+            :logout='logout'
+            :voyages="voyages"
+            :ideas="ideas"
+            :login="login"
+            :is-connected="isConnected"
+            :favoris="favoris"
+            :favorispayed="favorispayed"
+            :placesleft="placesleft"
+            :homeadm="homeadm"
+            :ok="ok"
+            @logout="logout"
+            @login="login"
+            @update-homead="updatehomead"
+            @add-idea="addidea"
+            @delete-idea="deleteidea"
+            @update-idea="updateidea"
+            @update-tickets="updatetickets"
+            @delete-voyage="deletevoyage"
+            @add-to-panier="addToPanier"
+            @send-edit-quantity="sendEditQuantity"
+            @send-payement="sendPayement"
+        ></router-view>
+        </main>
+
+            <footer> 
+    
+                <div id="resumenu">
+                    <ul>
+                        <li><router-link to='/' id="home">Accueil</router-link></li>
+                        <li v-if=" user.id == 1 && isConnected"><router-link to='/stats' id="stats">Admin</router-link></li>
+                        <li><router-link to='/voyages' id="voyages">Voyages</router-link></li>
+                        
+                    </ul>
+                    <br><br>
+                    <ul>
+                        <li v-if="isConnected"><router-link to='/favoris' id="favoris">Favoris</router-link></li>
+                        <li><router-link to='/citoyen' id="citoyen">Avis citoyens</router-link></li>
+                        <li><router-link to='/news' id="news">A propos</router-link></li>
+                    </ul>
+                </div>
+                <img id="signe" src="plane.png">
+            </footer>
+        </div>
+        <script src="/vue-application.js"></script>
+
+    </body>
+</html>
+
+
+

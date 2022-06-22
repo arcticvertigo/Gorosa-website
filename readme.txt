@@ -13,7 +13,7 @@ Ce site Web est créé des millions d'années après le départ des humains de l
 A cette époque, nous avions réalisé un site web de propagande pour inciter des personnes à nous rejoindre dans cette aventure. (https://calciphil.github.io/)
 Les chanceux qui sont venus avec nous vivent maintenant à Gorosa, 600 ans après l'arrivée du vaisseau humain sur la planète.
 
-Il y a 100 ans, une météorites'est écrasée dans le desert et a contaminé l'air avec un virus qui donne aux habitants le cafard.
+Il y a 100 ans, une météorite s'est écrasée dans le desert et a contaminé l'air avec un virus qui donne aux habitants le cafard.
 Le Gouvernement Communiste de Gorosa a donc décidé de s'impliquer dans le bonheur des citoyens en leur proposant des moyens de divertissement.
 
 

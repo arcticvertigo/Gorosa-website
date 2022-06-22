@@ -5,15 +5,15 @@
       <form @submit.prevent="createUser()">
         <h2 class="text-center">Inscription</h2>
         <div class="form-group">
-          <input v-model='name' placeholder="username" class="form-control">
+          <input v-model='name' placeholder="username" class="form-control" required>
         </div>
 
         <div class="form-group">
-          <input v-model="email" placeholder="email" class="form-control">
+          <input type="email" v-model="email" placeholder="email" class="form-control" required>
         </div>
 
         <div class="form-group">
-          <input type="password" v-model="password" placeholder="password" class="form-control">
+          <input type="password" v-model="password" placeholder="password" class="form-control" required>
         </div>
 
          <div class="form-group">

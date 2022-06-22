@@ -6,10 +6,10 @@
       <form @submit.prevent="loginUser()">
         <h2 class="text-center">Connexion</h2>
         <div class="form-group">
-            <input v-model="email" placeholder="email" class="form-control">
+            <input v-model="email" placeholder="email" class="form-control" required>
         </div>
         <div class="form-group">
-            <input type="password" v-model="password" placeholder="password" class="form-control">
+            <input type="password" v-model="password" placeholder="password" class="form-control" required>
         </div> 
         <div class="form-group">
             <button type="submit" class="btnl">Connexion</button>

@@ -32,6 +32,19 @@
             <div class="voyage-title">
                 <h2 :style="{backgroundColor: 'rgba(0, 0, 0, 0.493)'}">{{ voyage.name }} - {{ voyage.price }}T <br>Passagers : {{favori.quantity}}  </h2>
                   <div id="descvoy">{{ voyage.description }}
+                  <br><br>
+                            <div v-if="voyage.id==1">
+                                Dates du voyage : 5 ventôse - 6 floréal
+                                </div>
+                                <div v-if="voyage.id==2">
+                                Dates du voyage : 13 prairial - 18 thermidor
+                                </div>
+                                <div v-if="voyage.id==3">
+                                Dates du voyage : 26 frimaire - 30 pluviôse
+                                </div>
+                                <div v-if="voyage.id==4">
+                                Dates du voyage : 7 vendémiaire - 12 frimaire
+                            </div>
                 <br>
                   <div v-if="voyage.nb_places > place.sum">
                       Nombre de places restantes sur {{voyage.nb_places}} : {{voyage.nb_places - place.sum}}

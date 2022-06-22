@@ -13,7 +13,7 @@ Ce site Web est créé des millions d'années après le départ des humains de l
 A cette époque, nous avions réalisé un site web de propagande pour inciter des personnes à nous rejoindre dans cette aventure. (https://calciphil.github.io/)
 Les chanceux qui sont venus avec nous vivent maintenant à Gorosa, 600 ans après l'arrivée du vaisseau humain sur la planète.
 
-Il y a 100 ans, un astéroïde a contaminé l'air avec un virus qui donne aux habitants le cafard.
+Il y a 100 ans, une météorites'est écrasée dans le desert et a contaminé l'air avec un virus qui donne aux habitants le cafard.
 Le Gouvernement Communiste de Gorosa a donc décidé de s'impliquer dans le bonheur des citoyens en leur proposant des moyens de divertissement.
 
 
@@ -31,7 +31,7 @@ Les citoyens gardent à vie la possibilité de voyager à travers le Système de
 -- Réservation d'un voyage -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Pour réserver un voyage, 
- - Il suffit de se rendre sur la page dédiées aux voyages, et d'en choisir un un plusieurs. ATTENTION : il est nécéssaire de recharger la carte des étoiles dès l'entrée sur la page des voyages. (problème d'axtualisation non résolu)
+ - Il suffit de se rendre sur la page dédiées aux voyages, et d'en choisir un ou plusieurs. ATTENTION : il est nécéssaire de recharger la carte des étoiles dès l'entrée sur la page des voyages. (problème d'actualisation non résolu par nos scientifiques)
  - Ensuite, rendez vous sur votre onglet Favoris où seront affichés vos voyages enregistrés (ATTENTION : actualisez cette fois encore la page pour ne pas avoir de mauvaise surprise). 
    Vous pouvez maintenant changer le nombre de passagers pour votre voyage, supprimer le voyage ou bine réserver le voyage, si vous avez assez de tickets.
  - Après réservation, cliquez sur l'onglet Compte : vos informations personnelles ainsi que vos voyages réservés seront affichés. 
